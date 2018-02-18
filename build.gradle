@@ -2,7 +2,7 @@ group 'me.minidigger.voxelgameslib.skeleton'
 version '1.0-SNAPSHOT'
 
 dependencies {
-    compileOnly rootProject
+    compileOnly project(":VoxelGamesLib")
 }
 
 task copyToServer(dependsOn: 'jar', type: Copy) {
