@@ -12,7 +12,7 @@ import com.voxelgameslib.voxelgameslib.feature.FeatureInfo;
 public class SkeletonFeature extends AbstractFeature {
 
     @Override
-    public void start() {
+    public void enable() {
     }
 
     @Override
