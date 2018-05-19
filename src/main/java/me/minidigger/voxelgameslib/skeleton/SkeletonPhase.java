@@ -8,6 +8,7 @@ import com.voxelgameslib.voxelgameslib.feature.features.KitFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.MapFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.MobFeature;
 import com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature;
+import com.voxelgameslib.voxelgameslib.feature.features.SpectatorFeature;
 import com.voxelgameslib.voxelgameslib.phase.TimedPhase;
 
 import org.bukkit.GameMode;
@@ -49,5 +50,8 @@ public class SkeletonPhase extends TimedPhase {
 
         MobFeature mobFeature = getGame().createFeature(MobFeature.class, this);
         addFeature(mobFeature);
+
+        SpectatorFeature spectatorFeature = getGame().createFeature(SpectatorFeature.class, this);
+        addFeature(spectatorFeature);
     }
 }
